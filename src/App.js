@@ -1,7 +1,13 @@
+import { useState } from "react";
 import "./styles.css"
 
 
 function App() {
+
+    const [email,setEmail] = useState("")
+    const [password,setPassword] = useState("")
+
+
   return (
     <div className="container">
       <div className="container-login">
@@ -13,18 +19,30 @@ function App() {
 
 
             <div className="wrap-input">
-              <input className="input" type="Email" />
+
+              <input 
+              className={email !== "" ? 'has-val input' : 'input' }
+               type="Email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+               />
+
               <span className="focus-input" data-placeholder="Email"></span>
             </div>
 
             <div className="wrap-input">
-              <input className="input" type="Password" />
+              <input 
+              c className={email !== "" ? 'has-val input' : 'input' } 
+              type="Password" 
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              />
               <span className="focus-input" data-placeholder="Password"></span>
             </div>
 
 
-              <div className="container-login-from-btn">
-                <button className="login-from-btn">Login</button>
+              <div className="container-login-form-btn">
+                <button className="login-form-btn">Login</button>
               </div>
 
 
