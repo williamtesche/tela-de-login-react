@@ -4,7 +4,14 @@
 
 function Cadastro() {
   return (
-    <div>bem vindo</div>
+    <div>
+      bem vindo
+
+<h1>TESTE</h1>
+
+   </div>
+
+   
 
   )
 

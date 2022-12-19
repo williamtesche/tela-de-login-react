@@ -51,15 +51,11 @@ function App() {
             </div>
             <div className="text-center">
               <span className="txt1">Não possui conta?</span>
+              <a className="txt2" href="/cadastro">
+              Criar conta.
+            </a>
             </div>
-
-            <Router>
-              <Route path="/" exact component={Cadastro}>
-                <a className="txt2" href="/">
-                  Criar conta.
-                </a>
-              </Route>
-            </Router>
+           
           </form>
         </div>
       </div>
