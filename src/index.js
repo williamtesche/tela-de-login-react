@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Cadastro from './Cadastro';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Cadastro from './Cadastro';
+
 
 
 const router = createBrowserRouter([

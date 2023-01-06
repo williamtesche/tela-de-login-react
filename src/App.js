@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./styles.css";
-import Cadastro from "./Cadastro";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -32,7 +31,7 @@ function App() {
             <div className="wrap-input">
               <input
                 c
-                className={email !== "" ? "has-val input" : "input"}
+                className={password !== "" ? "has-val input" : "input"}
                 type="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
