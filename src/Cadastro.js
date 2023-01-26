@@ -4,7 +4,11 @@ import { useState } from "react";
 function Cadastro() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [telefone, setTelefone] = useState("");
+  const [telefone, setTelefone] = useState("")
+
+  function Alert() {
+    alert("Seu cadastro foi salvo com sucesso!");
+  }
 
   return (
     <div className="container">
@@ -35,12 +39,12 @@ function Cadastro() {
 
             <div className="wrap-input">
               <input
-                c
-                className={password !== "" ? "has-val input" : "input"}
-                type="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
+                
+              className={password !== "" ? "has-val input" : "input"}
+              type="Password"
+              value={password}
+               onChange={(e) => setPassword(e.target.value)}
+             />
               <span className="focus-input" data-placeholder="Password"></span>
             </div>
 
@@ -49,7 +53,7 @@ function Cadastro() {
               <span></span>
               <span></span>
               <span></span>
-              <button className="login-form-btn">Salvar</button>
+              <button className="login-form-btn" onClick={Alert}>Salvar</button>
             </div>
           </form>
         </div>
